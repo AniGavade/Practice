@@ -1,6 +1,6 @@
 # Python Counter to find the size of largest subset of anagram words
 #
-# from collections import Counter
+from collections import Counter
 
 
 def largeSubset(word):
@@ -10,11 +10,12 @@ def largeSubset(word):
     for i in range(0, len(word)):
         word[i] = "".join(sorted(word[i]))
 
-    freqDict = Counter(word)
-    print(max(freqDict.values()))
+    a = Counter(word)
+    print(max(a.values()))
 
 
 if __name__ == "__main__":
     word = "rukna evol ylfrettub tub vole ylfrettub evol knura"
     largeSubset(word)
+
 
