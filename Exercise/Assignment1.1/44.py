@@ -1,3 +1,5 @@
+# Program to accept the strings which contains all vowels
+
 vowels = {"a", "e", "i", "o", "u"}
 str = input("Enter a string: ")
 s = set()
