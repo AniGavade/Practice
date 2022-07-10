@@ -82,3 +82,32 @@
 #     factorial = factorial * i
     
 # print(f"Factorial of {num} = {factorial}")
+
+# _________________________________________________________________________________________________________________________________
+
+#
+# s = "aniruddha"
+# x="-".join(s)
+# print(x)
+
+# s = "ankur"
+# if i in s:
+#     print(i, end="-")
+
+a = "nitin"
+b = ''
+# op > n-i-t-i-n
+for i in a:
+    b = b + i + "-"
+print(b.strip("-"))
+
+# 9822503261
+
+# # find the length of string
+# str_="vijaynagar"
+# z="ab"
+# x=z.join(str_) # here x print vabiabjabaaby
+# x1=x.count(z)+1
+# #count function return how many time z occured in str. 4 time occured then add 1 i.e 4+1=5
+# print(x)
+# print(x1)
