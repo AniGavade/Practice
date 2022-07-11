@@ -13,3 +13,8 @@ def show():
 
 decorator_show = decorator_func(show)
 decorator_show()
+
+@decorator_func
+def display():
+    print("display worked")
+display()

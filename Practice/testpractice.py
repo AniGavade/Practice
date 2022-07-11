@@ -123,6 +123,15 @@
 #         b.sort()
 # print(b)
 
+# s = "Djka1sjsjs2anns4ksmsm3"
+# a = "".join(sorted(s))
+# print(a)
+
+# import re
+# str_ = "5an2ki3taims5"
+# x = re.findall("[0-9]",str_)
+# y = re.findall("[a-z]",str_)
+# print("".join(x)+"".join(y))
 
 
 # list1 = [11, 22, 33, 44]
@@ -195,3 +204,11 @@
 # d = {"A": 1, "B": 2, "C": 3}
 # *x, = d
 # print(x)
+
+# s = "Learning Python Is Very Easy"
+# a = []
+# for i in s:
+#     s.istitle()
+# print(s)
+
+
