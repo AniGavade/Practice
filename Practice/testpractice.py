@@ -87,19 +87,19 @@
 
 #
 # s = "aniruddha"
-# x="-".join(s)
+# x = "-".join(s)
 # print(x)
 
 # s = "ankur"
 # if i in s:
 #     print(i, end="-")
 
-a = "nitin"
-b = ''
-# op > n-i-t-i-n
-for i in a:
-    b = b + i + "-"
-print(b.strip("-"))
+# a = "nitin"
+# b = ''
+# # op > n-i-t-i-n
+# for i in a:
+#     b = b + i + "-"
+# print(b.strip("-"))
 
 # 9822503261
 
@@ -111,3 +111,87 @@ print(b.strip("-"))
 # #count function return how many time z occured in str. 4 time occured then add 1 i.e 4+1=5
 # print(x)
 # print(x1)
+
+
+#
+# s = "Djka1sjsjs2anns4ksmsm3"
+# a = ""
+# for i in s:
+#     if i.isnumeric() + i.isalpha():
+#         a += i
+#         b = list(a)
+#         b.sort()
+# print(b)
+
+
+
+# list1 = [11, 22, 33, 44]
+# enumerate_list = enumerate (list1)
+# print ("Enumerated list now looks like:", list (enumerate_list)) #print the index and corresponding value for enumerated list1 for i, item in enumerate (list1): print ("Index = ", i,": "," value = ", item)
+
+#
+# d = {}
+# num_students = int(input("enter the no of student: "))
+# for i in range(num_students):
+#     name = input("Enter the name of student: ")
+#     y = eval(input("enter the list of marks of student: "))
+#     marks = sum(list(y))/len(y)
+#     d[name] = marks
+# print(d)
+# # while True:
+#     name = input("enter the name of student: ")
+#     marks = d.get(name,-1)
+#     if marks >= 80:
+#         print(name,"has A Grade")
+#     elif marks >= 60:
+#         print(name,"has B Grade")
+#     elif marks >= 40:
+#         print(name,"has C Grade")
+#     elif marks == -1:
+#         print("student not found")
+#     option = input("do u want to check another student marks:[yes/no] ")
+#     if option == "no":
+#         break
+# print("thank u")
+
+# for i in range(23, 24):
+#     for j in range(1, 11):
+#         print(f"{i} * {j} = {i * j}")
+# a = 25
+# l = [x*a for x in range(1, 11)]
+# print(l)
+
+# a = [f"{x} is even" if x%2 == 0 else f"{x} is odd" for x in range(10)]
+# print(a)
+
+# s = {7, 3, 9, 4, 8, 2}
+# s.add(5)
+# print(s)
+
+# 1st method - Using list
+# d = {"A": 1, "B": 2, "C": 3}
+# k = list(d.keys())
+# print(k)
+
+# d = {"A": 1, "B": 2, "C": 3}
+# k = list(d)
+# print(k)
+
+# 2nd method- Using iterable unpacking operator.
+# d = {"A": 1, "B": 2, "C": 3}
+# x = [*d.keys()]
+# print(x)
+
+# d = {"A": 1, "B": 2, "C": 3}
+# x = [*d]
+# print(x)
+
+# 3rd method- Using keys() Function.
+# d = {"A": 1, "B": 2, "C": 3}
+# x = d.keys()
+# print([k for k in x])
+
+# 4th method
+# d = {"A": 1, "B": 2, "C": 3}
+# *x, = d
+# print(x)
