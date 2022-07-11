@@ -228,18 +228,37 @@
 
 # ______________________________________________________________________________________________________________________
 
-class BalanceException(Exception):
-    pass
+# class BalanceException(Exception):
+#     pass
 
 
-def checkbalance():
-    n = int(input("withdraw money"))
-    money = 10000
-    withdraw = n
-    try:
-        balance = money - withdraw
-        if balance <= 2000:
-            raise BalanceException("insufficient Balance")
-        print(balance)
-    except BalanceException as be:
-        print(be)
+# def checkbalance():
+#     n = int(input("withdraw money: "))
+#     money = 10000
+#     withdraw = n
+#     try:
+#         balance = money - withdraw
+#         if balance < 2000:
+#             raise BalanceException("insufficient Balance")
+#         print("Your remaining balance: ", balance)
+#     except BalanceException as be:
+#         print(be)
+# checkbalance()
+# _____________________________________________________________________________________________________-
+
+class TooOldException(Exception):
+    def __init__(self,arg):
+        self.msg=arg
+    
+class TooYoungException(Exception):
+    def __init__(self,arg):
+        self.msg=arg
+
+age=int(input("Age-"))
+if age > 60:
+    raise TooOldException("cant give bride because too old")
+elif age<18:
+    raise TooYoungException("cant marriege under Age")
+else:
+    print("perfectly matched")
+
