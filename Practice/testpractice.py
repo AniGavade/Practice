@@ -80,7 +80,7 @@
 
 # for i in range (1,(num+1)):
 #     factorial = factorial * i
-    
+
 # print(f"Factorial of {num} = {factorial}")
 
 # _________________________________________________________________________________________________________________________________
@@ -122,6 +122,7 @@
 #         b = list(a)
 #         b.sort()
 # print(b)
+
 
 # s = "Djka1sjsjs2anns4ksmsm3"
 # a = "".join(sorted(s))
@@ -212,3 +213,33 @@
 # print(s)
 
 
+# x = "B4A1D3"
+# a = ""
+# b = ""
+# for i in x:
+#     if i.isalpha():
+#         a += i
+#
+# for j in x:
+#     if j.isnumeric():
+#         b += j
+#
+# print(sorted(a) + sorted(b))
+
+# ______________________________________________________________________________________________________________________
+
+class BalanceException(Exception):
+    pass
+
+
+def checkbalance():
+    n = int(input("withdraw money"))
+    money = 10000
+    withdraw = n
+    try:
+        balance = money - withdraw
+        if balance <= 2000:
+            raise BalanceException("insufficient Balance")
+        print(balance)
+    except BalanceException as be:
+        print(be)
