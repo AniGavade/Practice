@@ -11,7 +11,8 @@
 # print(z)
 # ______________________________________________________________________________________________________________________
 
-# intersection() = '''It gives output common values between given variables'''
+# intersection() = '''It gives output common values between given variables.
+#                      and it can store value in another output while expresion inserts in'''
 
 # x = {"wonder", "self", "image", "git"}
 # y = {'python', "java", "HTML", "git", "C++"}
@@ -19,4 +20,40 @@
 # print(z)
 # ______________________________________________________________________________________________________________________
 
-intersection_update() = '''It '''
+# intersection_update() = '''it same as intersection but it cannot store values in new variable while expression executing.'''
+
+# x = {"wonder", "self", "image", "git"}
+# y = {'python', "java", "HTML", "git", "C++"}
+# a = {"Django", "git", "flask"}
+# x.intersection_update(y, a)
+# print(x)
+# ______________________________________________________________________________________________________________________
+
+# difference() = ''''''
+
+# x = {"wonder", "self", "image", "git"}
+# y = {'python', "java", "HTML", "git", "C++"}
+# z = x.difference(y)
+# print(z)
+
+# x = {"wonder", "self", "image", "git"}
+# y = {'python', "java", "HTML", "git", "C++"}
+# z = y.difference(x)
+# print(z)
+# ______________________________________________________________________________________________________________________
+
+# difference_update()
+
+# x = {"wonder", "self", "image", "git"}
+# y = {'python', "java", "HTML", "git", "C++"}
+# y.difference_update(x)
+# print(y)
+# ______________________________________________________________________________________________________________________
+
+# symmetric_difference()
+
+# x = {"wonder", "self", "image", "git"}
+# y = {'python', "java", "HTML", "git", "C++"}
+# x.symmetric_difference_update(y)
+# print(x)
+# ______________________________________________________________________________________________________________________
