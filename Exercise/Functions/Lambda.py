@@ -1,11 +1,11 @@
 from functools import reduce            # reduce() function is used for
 
-l = [81, 52, 35, 62, 21, 68, 23]
-
-x = reduce(lambda a, b: a if a > b else b, l)
-y = reduce(lambda a, b: a if a > b and a < reduce(lambda a, b: a if a > b else b, l) else b, l)
-print(y)
-print(x)
+# l = [81, 52, 35, 62, 21, 68, 23]
+#
+# x = reduce(lambda a, b: a if a > b else b, l)
+# y = reduce(lambda a, b: a if a > b and a < reduce(lambda a, b: a if a > b else b, l) else b, l)
+# print(y)
+# print(x)
 
 # abc=[10,20,30,[40,50]]
 # n=len(abc)
@@ -58,9 +58,9 @@ print(x)
 
 # # Given a list of names, output a list that contains only the names that consist of more than 5 characters.
 
-# names = ["David", "John", "Annabelle", "Johnathan", "Veronica"]
-# result = list(filter(lambda x: len(x)>5, names))
-# print(result)
+names = ["David", "John", "Annabelle", "Johnathan", "Veronica"]
+result = list(map(lambda x: len(x) > 5, names))
+print(result)
 
 # fruits = ["apples", "oranges", "bananas", "melons"]
 # prices = [20, 30, 40, 35]
@@ -89,4 +89,10 @@ print(x)
 
 # l = lambda a, b: a*b
 # result = l(3, 4)
+# print(result)
+# ______________________________________________________________________________________________________________________
+
+# from functools import reduce
+# lst = [1, 2, 3, 45]
+# result = reduce((lambda x, y: x + y), lst)
 # print(result)
