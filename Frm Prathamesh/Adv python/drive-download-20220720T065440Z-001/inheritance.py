@@ -328,44 +328,44 @@
 #
 # # 4. Multiple Inheritance :
 
-class Animal:
-    def __init__(self, Animal):
-        print(Animal, 'is an animal.')
-
-
-class Mammal(Animal):
-    def __init__(self, mammalName):
-        print(mammalName, 'is a warm-blooded animal.')
-        super().__init__(mammalName)
-
-class NonWingedMammal2(Mammal):
-    def __init__(self, NonWingedMammal2):
-        print(NonWingedMammal2, "can't fly in sky.")
-        super().__init__(NonWingedMammal2)
-
-    def showAnimal(self, animal):
-        self.animal = animal
-        print(animal)
-
-class NonWingedMammal(Mammal):
-    def __init__(self, NonWingedMammal):
-        print(NonWingedMammal, "can't fly.")
-        super().__init__(NonWingedMammal)
-
-
-class NonMarineMammal(Mammal):
-    def __init__(self, NonMarineMammal):
-        print(NonMarineMammal, "can't swim.")
-        super().__init__(NonMarineMammal)
-
-
-class Dog(NonMarineMammal, NonWingedMammal2, NonWingedMammal):
-    def __init__(self):
-        print('Dog has 4 legs.')
-        super().__init__('Dog')
-
-
-d = Dog()
+# class Animal:
+#     def __init__(self, Animal):
+#         print(Animal, 'is an animal.')
+#
+# #
+# class Mammal(Animal):
+#     def __init__(self, mammalName):
+#         print(mammalName, 'is a warm-blooded animal.')
+#         super().__init__(mammalName)
+#
+# class NonWingedMammal2(Mammal):
+#     def __init__(self, NonWingedMammal2):
+#         print(NonWingedMammal2, "can't fly in sky.")
+#         super().__init__(NonWingedMammal2)
+#
+#     def showAnimal(self, animal):
+#         self.animal = animal
+#         print(animal)
+#
+# class NonWingedMammal(Mammal):
+#     def __init__(self, NonWingedMammal):
+#         print(NonWingedMammal, "can't fly.")
+#         super().__init__(NonWingedMammal)
+#
+#
+# class NonMarineMammal(Mammal):
+#     def __init__(self, NonMarineMammal):
+#         print(NonMarineMammal, "can't swim.")
+#         super().__init__(NonMarineMammal)
+#
+#
+# class Dog(NonMarineMammal, NonWingedMammal, NonWingedMammal2):
+#     def __init__(self):
+#         print('Dog has 4 legs.')
+#         super().__init__('Dog')
+#
+#
+# d = Dog()
 # print('')
 # bat = NonMarineMammal('Bat')
 # d.showAnimal("Cat")
@@ -415,7 +415,26 @@ d = Dog()
 # g2 = OutdoorGame("hockey")
 
 # # -----------------------------------------------------------------------------------------------------------------
-
-
-
-
+#
+# class Sunil():
+#     def __init__(self):
+#         super().__init__()
+#         print("father constructer")
+#     def show(self):
+#         print("Father is printed as Sunil patil")
+#
+# class Chhaya():
+#     def __init__(self):
+#         super().__init__()
+#         print("mother constructer")
+#     def seen(self):
+#         print("Mother is printed as Chhaya patil")
+#
+# class Paresh(Sunil,Chhaya):
+#     def __init__(self):
+#         super().__init__()
+#         print("son constructer")
+#     def watch(self):
+#         print("child is printed as paresh patil")
+#
+# s=Paresh()
