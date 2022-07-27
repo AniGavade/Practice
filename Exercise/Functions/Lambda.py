@@ -58,9 +58,9 @@ from functools import reduce            # reduce() function is used for
 
 # # Given a list of names, output a list that contains only the names that consist of more than 5 characters.
 
-names = ["David", "John", "Annabelle", "Johnathan", "Veronica"]
-result = list(map(lambda x: len(x) > 5, names))
-print(result)
+# names = ["David", "John", "Annabelle", "Johnathan", "Veronica"]
+# result = list(map(lambda x: len(x) > 5, names))
+# print(result)
 
 # fruits = ["apples", "oranges", "bananas", "melons"]
 # prices = [20, 30, 40, 35]
@@ -96,3 +96,8 @@ print(result)
 # lst = [1, 2, 3, 45]
 # result = reduce((lambda x, y: x + y), lst)
 # print(result)
+# ______________________________________________________________________________________________________________________
+
+# f = lambda x: bool(x % 2)
+# print(f(20), f(21))
+ 
