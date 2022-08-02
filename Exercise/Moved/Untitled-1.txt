@@ -1,0 +1,2 @@
+a=["aa","bb","cc","dd","ee"]
+print(a[-1:])
