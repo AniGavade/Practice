@@ -36,15 +36,57 @@
 #
 # who_is_developer()
 
-def decor1(func1):
-    def check():
-        print("Lets check")
-        func1()
-        print("Here")
-    return check
+# def decor1(func1):
+#     def check():
+#         print("Lets check")
+#         func1()
+#         print("Here")
+#     return check
+#
+# @decor1
+# def data():
+#     print("It exist")
+#
+# data()
+# ______________________________________________________________________________________________________________________
 
-@decor1
-def data():
-    print("It exist")
+# code for testing decorator chaining
 
-data()
+# def decor1(func):
+#     def inner2():
+#         print("inner2")
+#         func()
+#         print("inner2***")
+#
+#     return inner2
+#
+#
+# def decor(func):
+#     def inner1():
+#         print("inner1")
+#         func()
+#         print("inner1***")
+#
+#     return inner1
+#
+#
+# @decor
+# @decor1
+# def num():
+#     print("hello")
+#
+#
+# num()
+# ______________________________________________________________________________________________________________________
+
+def decor_(func):
+    print("here executes the function ")
+    return func
+
+
+@decor_
+def normal_func(a, b):
+    print(f"the value of a = {a}, and value of b = {b}")
+
+
+normal_func(2, 4)
