@@ -431,13 +431,6 @@ sequence and also satisfies the predicate.'''
 # ----------------------------------------------------------------------------------------------------------------------
 
 
-# lst_ =
-
-
-
-
-
-
 # # Tuple function
 # 1. count()
 # tup_ = (3, 5, 7, 2, 1, 8, 3, 4, 2, 7, 6)
@@ -468,3 +461,73 @@ sequence and also satisfies the predicate.'''
 # tup_ = (3, 5, 7, 2, 1, 8, 3, 4, 2, 7, 6)
 # a = tup_.copy()
 # print(a)
+# ______________________________________________________________________________________________________________________
+
+# Set and frozenset
+# containers of distinct elements.
+# They are both containers of distinct hashable elements.
+"""They can be constructed from other iterables. if you dont know what iterabless are, 
+If the iterable contains dupicate elements, they'll be  removed automatically in the constructed set objects."""
+
+# l1 = [3, 6, 8, 9, 3]
+# l2 = [4, 2, 6, 8]
+#
+# l1 = int("".join([str(x) for x in l1]))
+# l2 = int("".join([str(x) for x in l2]))
+#
+# print([int(x) for x in str(l1 + l2)])
+# ______________________________________________________________________________________________________________________
+
+# import pyttsx3
+#
+# book = open(r"book.txt")
+# book_text = book.readlines()
+# engine = pyttsx3.init()
+# for i in book_text:
+#     engine.say(i)
+#     engine.runAndWait()
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# reverse the int value without using string
+# x = 83475
+# c = 0
+#
+# while x > 0:
+#     digit = x % 10
+#     c = c * 10 + digit
+#     x = x // 10
+#
+# print(c)
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# x = [4, 6, 8, 24, 12, 2]
+#
+# for i in range(len(x)):
+#     for j in range(i + 1, len(x)):
+#
+#         if x[i] > x[j]:
+#             x[i], x[j] = x[j], x[i]
+# print(x[::-1])
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# lst_ = []
+#
+# for i in range(1, 11):
+#     if (i == 1) or (i > lst_[-1]):
+#         lst_.append(i)
+# print(lst_[::-1])
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# string = input("enter your string: ")
+# for i in string:
+#     if i in "aeiou":
+#         print("*", end="")
+#     else:
+#         print(i, end="")
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# for i in range(1):
+#     print(i, end="")
+# else:
+#     print("executed")
+

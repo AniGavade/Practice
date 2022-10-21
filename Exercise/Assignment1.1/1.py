@@ -1,5 +1,5 @@
 # Python Program for factorial of a number with and without recursion
-# recursion: It is a function which calls itself.
+# : It is a function which calls itself.
 
 # With recursion.
 
@@ -13,7 +13,7 @@
 # num = int(input("User input: "))
 # print("The factorial", num, "is", fact(num))
 
-# _____________________________________________________________________________________________________________________
+# ______________________________________________________________________________________________________________________
 
 # Without recursion.
 
@@ -37,3 +37,17 @@
 # print(f"Factorial of {f} = {fact}")
 # ______________________________________________________________________________________________________________________
 
+# # Factorial using lambda function
+# fact_ = lambda n: 1 if n == 0 else n * fact_(n - 1)
+# print(fact_(5))
+# ______________________________________________________________________________________________________________________
+
+# # factorial by using recursion method (lambda)
+# recursive_lambda = (lambda func: lambda *args: func(func, *args))
+# print(recursive_lambda(lambda self, x: x * self(self, x - 1) if x > 0 else 1)(5))
+"""the name self is not a reserved keyword, it is merely a convention above pythonistas
+to name the instance of the object on which the function applies.
+here, the author uses the name self as the first argument to the lambda,
+because this argument will receive an instance of an object on which the lambda will
+apply the method specified in the argument named method"""
+# ______________________________________________________________________________________________________________________

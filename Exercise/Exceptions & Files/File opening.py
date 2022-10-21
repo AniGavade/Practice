@@ -1,11 +1,11 @@
 # # writing file.
 
-# f = open("abcd.txt", "w")
-# f.write("Ani\n")
-# f.write("Ankush\n")
-# f.write("pankaj\n")
-# f.write("vinay\n")
-# f.close()
+f = open("abcd.txt", "w")
+f.write("Ani\n")
+f.write("Ankush\n")
+f.write("pankaj\n")
+f.write("vinay\n")
+f.close()
 # =================================================================
 
 #  Reading character data from the files:

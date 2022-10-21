@@ -13,7 +13,7 @@
 #     print("This is the Armstrong number")
 # else:
 #     print("This number isn't armstrong number")
-
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # # # By using for loop in function.
 # n = int(input("Enter the number: "))
@@ -29,18 +29,4 @@
 #     print("The number is Armstrong number")
 # else:
 #     print("The number isn't Armstrong number, try another number.")
-# ________________________________________________________________________________________________________________
-
-n = int(input("Enter the number: "))
-sum_ = str(n)
-order = len(sum_)
-digit_ = 0
-for i in sum_:
-    i = int(i)
-    a = i ** order
-    digit_ += a
-
-if digit_ == n:
-    print("The number is Armstrong number")
-else:
-    print("The number isn't Armstrong number, try another number")
+# ______________________________________________________________________________________________________________________

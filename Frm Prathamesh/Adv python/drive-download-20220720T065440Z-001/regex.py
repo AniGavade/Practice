@@ -5,12 +5,12 @@ import re
 # ----------------------------------------------------------------------------------------------------------------------
 
 # find words with length 5
-# string = 'kelly and jolly are best friends'
-# # \b used to get string present at start or end according to its position
-# # \w{5} used for alphanumeric characters with length 5
-# pattern = re.compile(r'\b\w{5}\b')
-# res = pattern.findall(string)
-# print(res)
+string = 'kelly and jolly are best friends'
+# \b used to get string present at start or end according to its position
+# \w{5} used for alphanumeric characters with length 5
+pattern = re.compile(r'\b\w{5}\b')
+res = pattern.findall(string)
+print(res)
 
 
 # find three digits numbers

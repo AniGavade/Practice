@@ -79,14 +79,34 @@
 # num()
 # ______________________________________________________________________________________________________________________
 
-def decor_(func):
-    print("here executes the function ")
-    return func
+# def decor_(func):
+#     print("here executes the function ")
+#     return func
+#
+#
+# @decor_
+# def normal_func(a, b):
+#     print(f"the value of a = {a}, and value of b = {b}")
+#
+#
+# normal_func(2, 4)
+# ______________________________________________________________________________________________________________________
+
+def outer(exp):
+    def upper(fun):
+        def inner():
+            str1 = fun()
+            a = str1.upper()
+            return a + exp
+
+        return inner
+
+    return upper
 
 
-@decor_
-def normal_func(a, b):
-    print(f"the value of a = {a}, and value of b = {b}")
+@outer(" SWASTIK")
+def str_fun():
+    return "good morning"
 
 
-normal_func(2, 4)
+print(str_fun())

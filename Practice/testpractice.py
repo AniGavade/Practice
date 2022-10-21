@@ -351,3 +351,255 @@
 #             print(i, k, j[k])
 # ______________________________________________________________________________________________________________________
 
+# l1 = [10, 20, 30, 40, 10, 20, 30, 50, 10]
+# print(l1)
+# l2 = []
+# for i in l1:
+#     if i not in l2:
+#         l2.append(i)
+# print(l2)
+# ______________________________________________________________________________________________________________________
+
+# n1 = 20
+# n2 = 30
+# print(n1 * n2)
+
+# n1 = 40
+# n2 = 30
+# print(n1 + n2)
+# ______________________________________________________________________________________________________________________
+
+# def mult_or_sum(n1, n2):
+#     # calculate product of two number
+#     prod_ = n1 * n2
+#     if prod_ <= 1000:
+#         return prod_
+#     else:
+#         return n1 + n2
+#
+#
+# result = mult_or_sum(20, 30)
+# print("The result is: ", result)
+#
+# result = mult_or_sum(40, 30)
+# print("the result is: ", result)
+# ______________________________________________________________________________________________________________________
+
+# previous_number = 0
+# for i in range(10):
+#     print(f"Current Number {i} Previous number {previous_number} sum: {i + previous_number}")
+#     previous_number = i
+# ______________________________________________________________________________________________________________________
+
+# str_ = input("enter the word: ")
+# print("Main string: ", str_)
+#
+# size_ = len(str_)
+#
+#
+# for i in range(0, size_ - 1, 2):
+#     print("index[", i, "]", str_[i])
+# ______________________________________________________________________________________________________________________
+
+# str_ = input("enter word: ")
+# x = list(str_)
+# for i in x[::2]:
+#     print(i)
+# ______________________________________________________________________________________________________________________
+
+# # remove first n character from a sting
+# def remove_word(word, n):
+#     print("Original String: ", word)
+#     x = word[n:]
+#     return x
+#
+#
+# print("removing character from a string")
+# print(remove_word("Shriyash", 4))
+# print(remove_word("Shriyash", 2))
+
+
+# str_ = "a7bb12c2d10"
+# op=""
+# for i in str_:
+#     if i.isalpha():
+#         i=i.replace(i," ")
+#     op=op+i
+# ans=op.split()
+# lst2=[]
+# for i in ans:
+#     lst2.append(int(i))
+# lst=list(filter(lambda x:x.isalpha(),str_))
+# res=list(map(lambda a,b:a*b,lst,lst2))
+# print("".join(res))
+
+
+# import re
+#
+# str_ = "a7b12c2d10"
+#
+# l4 = []
+# l1 = re.findall("\d+", str_)
+# for i in l1:
+#     l4.append(int(i))
+# # print("l4 is: ", l4)
+# l = []
+# a = []
+#
+# for i in str_:
+#     if i.isalpha():
+#         l.append(i)
+# print(l)
+#
+# for i, j in zip(l, l4):
+#     a.append(i * j)
+# # print("a: ", a)
+#
+# s = ''.join(a)
+# print(s)
+# ______________________________________________________________________________________________________________________
+# lst_ = [1, 2, 3, 4, 5, 6]
+# new_lst = []
+# for i in range(len(lst_)-1, -1, -1):
+#     new_lst.append(lst_[i])
+# print(new_lst)
+# ______________________________________________________________________________________________________________________
+
+# # what is iterator
+
+# lst_ = [4, 7, 0, 3]
+#
+# # get an iterator using iter()
+# iter_ = iter(lst_)
+#
+# # iterate through it using next()
+#
+# print(next(iter_))
+# print(next(iter_))
+# print(next(iter_))
+# print(next(iter_))
+# ______________________________________________________________________________________________________________________
+
+# Create a string made of the first middle and lst character.
+
+# str_ = "Aniruddha"
+# print("main string: ", str_)
+# result_ = str_[0]
+#
+# l1 = len(str_)
+# middle_ = int(l1 / 2)
+# result_ += str_[middle_]
+# result_ += str_[l1 - 1]
+# print("New string: ", result_)
+# ______________________________________________________________________________________________________________________
+# # create a string made of the middle three characters.
+
+
+# def get_middle_three_char(str_):
+#     middle_ = int(len(str_) / 2)
+#     result_ = str_[middle_ - 1: middle_ + 2]
+#     print("Middle three characters are: ", result_)
+
+
+# get_middle_three_char("aniruddha")
+# get_middle_three_char("JayShiRam")
+# ______________________________________________________________________________________________________________________
+# # Append new string in the middle of a given string
+
+# def append_middle(s1, s2):
+#     middle_ = int(len(s1) / 2)
+#     x = s1[:middle_:]
+#     x = x + s2
+#     print(x)
+#     x += s1[middle_:]
+#     print("after appending new string in middle: ", x)
+#
+#
+# append_middle("atul", "mohan")
+
+
+# s1 = input("enter the first name: ")
+# s2 = input("enter the second name: ")
+#
+# middle_ = int(len(s1) // 2)
+# print("middle:", middle_)
+# x = s1[:middle_:]
+# print(x)
+# x += s2
+# print(x)
+# x += s1[middle_:]
+# print("after appending new string in middle: ", x)
+# ______________________________________________________________________________________________________________________
+
+# # create a new string of the first, middle and last character of each input string.
+
+
+# lst_ = [34, 56, 39, 87, 54]
+# for i, j in enumerate(lst_):
+#     print("index is {} and the number is {}".format(i, j))
+# ______________________________________________________________________________________________________________________
+# # Merge two dictionaries in a single expression.
+
+# first = {1: 'travis', 2: "Tom", 3: "nitin"}
+# second = {2: 'saurabh', 4: "pankaj"}
+
+# allCombine = {**first, **second}
+# print(allCombine)
+
+# def merge_dicts(dict1, dict2):
+#     dict3 = dict1.copy()
+#     dict3.update(dict2)
+#     return dict3
+#
+# print(merge_dicts(first, second))
+# ______________________________________________________________________________________________________________________
+
+# List comprehension
+# lst_ = [(i, chr(64 + i)) for i in range(1, 5)]
+# print(lst_)
+
+# Dict comprehension
+# dict_ = dict([(i, chr(65 + i)) for i in range(5)])
+# print(dict_)
+
+# dict_ = {i: chr(65 + i) for i in range(5)}
+# print(dict_)
+
+
+# dict_ = {i: i ** 2 for i in range(1, 11)}
+# print(dict_)
+# ______________________________________________________________________________________________________________________
+
+# # return multiple values from a function.
+
+# def multValues(n1, n2):
+#     return n1 * n2, n2/n1
+#
+#
+# prod_, div_ = multValues(22, 43)
+# print("product", prod_, "division {:.2f}".format(div_))
+# ______________________________________________________________________________________________________________________
+
+#  CREATE A FUNCTION WITH  VARIABLE LENGTH OF ARGUMENTS.
+
+# def func_(*args):
+#     for i in args:
+#         print(i)
+#
+#
+# func_(20, 30, 40)
+# func_(260, 300)
+# func_("Abra ka Dabra")
+# ______________________________________________________________________________________________________________________
+
+# # a = [[2, 3]]*3
+# a = [[2, 3], [2, 3], [2, 3]]
+# # print(a)
+# a[3][0] = 3
+# print(id(a[0]))
+# print(id(a[1]))
+# print(id(a[2]))
+# # print(a)
+# ______________________________________________________________________________________________________________________
+
+

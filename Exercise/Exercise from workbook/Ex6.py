@@ -8,5 +8,4 @@ tip = menu_rate * tip_rate
 
 final_bill = menu_rate + tip + tax
 
-print("The tax is %.2f and the tip is %.2f, Your final_bill %.2f" \
-    (tax, tip, final_bill))
+print("The tax is %.2f and the tip is %.2f, Your final_bill %.2f", (tax, tip, final_bill))

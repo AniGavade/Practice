@@ -18,15 +18,24 @@
 #     print(arr[i], end=", ")
 # print()
 
+# ______________________________________________________________________________________________________________________
 
-arr = []
-n = int(input("number of elements in array: "))
-for i in range(n):
-    ele = int(input("Enter the number: "))
-    arr.append(ele)
-print(arr)
-m = int(input("element number from rotate the array: "))
-for i in range(m):
-    y = arr.pop(0)
-    arr.append(y)
-print(arr)
+# arr = []
+# n = int(input("number of elements in array: "))
+# for i in range(n):
+#     ele = int(input("Enter the number: "))
+#     arr.append(ele)
+# print(arr)
+# m = int(input("element number from rotate the array: "))
+# for i in range(m):
+#     y = arr.pop(0)
+#     arr.append(y)
+# print(arr)
+
+# ______________________________________________________________________________________________________________________
+
+# lst_ = [10, 20, 30, 40, 50, 60]
+# for i in range(0, 4):
+#     y = lst_.pop(0)
+#     lst_.append(y)
+# print(lst_)

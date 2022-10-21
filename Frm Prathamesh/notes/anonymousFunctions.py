@@ -138,7 +138,7 @@
 # Then result is compared with next item in the sequence. And so on.
 #
 # # Add all elements in list and return final result.
-# from functools import reduce
+    # from functools import reduce
 #
 # l = [71, 27, 83, 59, 15, 86, 28, 91, 54, 24, 36, 41]
 #
